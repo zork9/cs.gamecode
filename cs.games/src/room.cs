@@ -22,8 +22,13 @@ namespace Room
 using Coord;
 
 	public class Room {
-		Room() {}
+		Room(int xx, int yy, int relxx, int relyy) { map = new Map(xx,yy,relxx,relyy); }
 
+		public moveLeft() { map.moveLeft(); }
+		public moveRight() { map.moveRight(); }
+		public moveDown() { map.moveDown(); }
+		public moveUp() { map.moveUp(); }
+	
 		private Map map;
 	};
 };

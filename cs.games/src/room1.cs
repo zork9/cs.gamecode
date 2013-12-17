@@ -17,25 +17,13 @@
 
 namespace Game2
 {
-namespace Map 
+namespace Room1
 {
-using Coord;
+using Room;
 
-	public class Map {
-		Map(int xx, int yy, int relxx, int relyy) { 
-			mapCoord = new Coord(xx,yy); 
-			mapRelativeCoord = new Coord(relxx,relyy); 
-		}
+	public class Room1 extends Room {
+		Room1(int xx, int yy, int relxx, int relyy) { super(xx,yy,relxx,relyy); }
 
-		public moveLeft() { mapCoord.addToX(dx); }
-		public moveRight() { mapCoord.addToX(-dx); }
-		public moveDown() { mapCoord.addToY(dy); }
-		public moveUp() { mapCoord.addToY(-dy); }
-
-		private Coord mapCoord;
-		private Coord mapRelativeCoord;
-		private int dx;
-		private int dy;
 	};
 };
 };	

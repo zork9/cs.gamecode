@@ -17,25 +17,14 @@
 
 namespace Game2
 {
-namespace Map 
+namespace Player 
 {
 using Coord;
 
-	public class Map {
-		Map(int xx, int yy, int relxx, int relyy) { 
-			mapCoord = new Coord(xx,yy); 
-			mapRelativeCoord = new Coord(relxx,relyy); 
-		}
-
-		public moveLeft() { mapCoord.addToX(dx); }
-		public moveRight() { mapCoord.addToX(-dx); }
-		public moveDown() { mapCoord.addToY(dy); }
-		public moveUp() { mapCoord.addToY(-dy); }
-
+	public class Player {
+		Player(int xx, int yy) { mapCoord = new Coord(xx,yy); }
+		
 		private Coord mapCoord;
-		private Coord mapRelativeCoord;
-		private int dx;
-		private int dy;
 	};
 };
 };	

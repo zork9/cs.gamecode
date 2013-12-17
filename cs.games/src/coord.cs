@@ -21,9 +21,11 @@ namespace Coord
 {
 	public class Coord {
 		Coord(int xx, int yy) { x = xx; y = yy; }
-	
-		private:
-			int x, y;
+		
+		public void addToX(int dx) { x += dx; } 
+		public void addToY(int dy) { y += dy; } 
+		
+		private	int x, y;
 	}
 };
 };
